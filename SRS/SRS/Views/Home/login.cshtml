@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+    Layout = null;
+
+}
+<!DOCTYPE html>
 <!--
 Template Name: Kundol Admin - Bootstrap 4 HTML Admin Dashboard Theme
 Author: Themescoder
@@ -42,6 +46,11 @@ License: You must have a valid license purchased only from themeforest(the above
     <link rel="icon" href="~/assets/images/misc/favicon.png">
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="~/assets/images/misc/favicon.png">
+    <!-- IonIcons Icon -->
+    <link href="stylesheets/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -50,10 +59,10 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- Paste this code after body tag -->
     <div class="se-pre-con">
         <div class="pre-loader">
-            <img class="img-fluid" src="~/assets/images/loadergif_progKnights.gif" alt="loading">
+            <img class="img-fluid" src="~/assets/images/loadergif.gif" alt="loading">
         </div>
     </div>
-    <div class="container-fluid h-100 bg-image rtl" style="background-image: url(~/assets/images/misc/bg-login1.png);">
+    <div class="container-fluid h-100 bg-image rtl" style="background-image: url(../assets/images/misc/bg-login1.png);">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="row w-100 justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-4">
@@ -61,7 +70,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="card-header align-items-center  justify-content-center border-0 h-100px flex-column">
                             <div class="card-title mb-0">
                                 <h3 class="card-label font-weight-bold mb-0 text-body">
-                                    <img src="~/assets/images/misc/mun_logo.png" alt="logo">
+                                    <img src="~/assets/images/logos/logo.png" alt="logo">
                                 </h3>
 
                             </div>
@@ -69,7 +78,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         </div>
                         <center>
                             <h5 class="font-size-h5 mb-0 mt-3 text-dark align-items-center">
-                                يرجى تسجيل الدخول إلى حسابك
+                                نظام تنظيم العتاد التقني للشركة
                             </h5>
                         </center>
                         <div class="card-body p-0">
@@ -85,11 +94,10 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </label>
                                     </div>
                                     <div class="col-lg-10 col-9 pl-0">
-                                        <input type="email" name="email"
+                                        <input type="email" name="username"
                                                class="form-control bg-transparent text-dark border-0 p-0 h-20px font-size-h5"
-                                               placeholder="البريد الإلكتروني" id="exampleInputEmail1"
+                                               placeholder="اسم المستخدم (كما هو في نظام Portal)" id="exampleInputEmail1"
                                                aria-describedby="emailHelp">
-
                                     </div>
 
                                 </div>
@@ -329,25 +337,26 @@ License: You must have a valid license purchased only from themeforest(the above
                             </form>
                             <div class="text-center h-100px">
                                 <h5 class="font-size-h5 mb-3 mt-3 text-dark">
-                                    تنزيل تطبيقات منتجاتي
+                                    زيارة وسائل التواصل الاجتماعي
                                 </h5>
-                                <div class="">
-                                    <a href="#">
-                                        <img class="img-fluid w-45px" src="~/assets/images/social/fb.png"
-                                             alt="social1">
+                                <div class="" style="font-size: 50px">
+                                    <a href="https://www.facebook.com/%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%8A%D8%A7%D8%B3%D9%8A%D9%86-%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A%D8%A9-137189084869959" target="_blank">
+                                        <i class="mdi mdi-facebook aos-init aos-animate" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
                                     </a>
-                                    <a href="#">
-                                        <img class="img-fluid w-45px ml-2" src="~/assets/images/social/gp.png"
-                                             alt="social1">
+                                    <a href="https://twitter.com/alyaseenagri" target="_blank">
+                                        <i class="mdi mdi-twitter aos-init aos-animate" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
                                     </a>
-                                    <a href="#">
-                                        <img class="img-fluid w-45px ml-2" src="~/assets/images/social/pn.png"
-                                             alt="social1">
+                                    <a href="https://www.snapchat.com/alyaseenagri" target="_blank">
+                                        <i class="mdi mdi-snapchat aos-init aos-animate" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
                                     </a>
-                                    <a href="#">
-                                        <img class="img-fluid w-45px ml-2" src="~/assets/images/social/tw.png"
-                                             alt="social1">
+                                    <a href="https://www.instagram.com/alyaseenagri" target="_blank">
+                                        <i class="mdi mdi-instagram aos-init aos-animate" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
                                     </a>
+                                    <a href="https://wa.me/966135815588" target="_blank">
+                                        <i class="mdi mdi-whatsapp aos-init aos-animate" data-aos="fade" data-aos-delay="300" data-aos-offset="0"></i>
+                                    </a>
+
+
                                 </div>
                             </div>
                         </div>
